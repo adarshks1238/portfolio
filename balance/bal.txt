@@ -1,0 +1,2 @@
+1. git project fetch
+2.back ground fix
