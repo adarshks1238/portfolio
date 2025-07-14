@@ -52,7 +52,7 @@ const Home: React.FC = () => {
             <div className="w-44 h-44 mx-auto mb-8 rounded-full">
               <div className="w-full h-full rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center">
                 <img
-                  src="\src\components\doc\profile.jpg"
+                  src="public\profile.jpg"
                   alt="Profile"
                   className="w-40 h-40 rounded-full object-cover"
                 />
@@ -76,7 +76,7 @@ const Home: React.FC = () => {
 
           <div className="flex justify-center mb-8">
             <a
-              href="/src/components/doc/resume.pdf"
+              href="/public/resume.pdf"
               download
               className="inline-flex items-center px-6 py-3 bg-blue-600 text-white dark:text-white hover:bg-blue-700 dark:hover:bg-blue-500 rounded-lg transition-colors"
             >
