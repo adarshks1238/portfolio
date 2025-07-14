@@ -1,2 +1,2 @@
-1. git project fetch
+1. git project fetch - done
 2.back ground fix - done
