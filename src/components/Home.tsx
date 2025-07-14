@@ -70,9 +70,20 @@ const Home: React.FC = () => {
           </div>
 
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-12 max-w-2xl mx-auto">
-           I am a front-end developer with a strong interest in AI and machine learning. 
-           Passionate about creating user-friendly interfaces and exploring intelligent solutions
+            I am a front-end developer with a strong interest in AI and machine learning.
+            Passionate about creating user-friendly interfaces and exploring intelligent solutions
           </p>
+
+          <div className="flex justify-center mb-8">
+            <a
+              href="/src/components/doc/resume.pdf"
+              download
+              className="inline-flex items-center px-6 py-3 bg-blue-600 text-white dark:text-white hover:bg-blue-700 dark:hover:bg-blue-500 rounded-lg transition-colors"
+            >
+              <Download className="mr-2" size={20} />
+              Download Resume
+            </a>
+          </div>
         </div>
 
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
