@@ -54,7 +54,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
           <div className="flex items-center space-x-4">
            
             <a
-              href="https://www.linkedin.com/in/adarshksundresan/"
+              href="https://www.linkedin.com/in/adarshksundaresan/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-md text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
