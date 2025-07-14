@@ -4,20 +4,19 @@ import { Github, ExternalLink, Folder } from 'lucide-react';
 const Projects: React.FC = () => {
   const projects = [
     {
-      title: 'E-Commerce Platform',
+      title: 'Smart Ways',
       description:
-        'A full-stack e-commerce solution with modern UI/UX, secure payment integration, and comprehensive admin dashboard.',
-      tech: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-      github: '#',
-      live: '#',
+        ' The system aims to reduce traffic congestion and improve signal efficiency by dynamically adjusting traffic light timings based on real-time vehicle count and speed data-time chat application with AI-powered responses, message encryption, and responsive design.',
+      tech: ['JavaScript', 'HTML', 'CSS', 'Golang', 'Go-Chi', 'Python', 'MongoDB', 'TensorFlow', 'YOLOv11', 'WebSocket'],
+      github: 'https://github.com/adarshks1238/SmartWays.git',
     },
     {
-      title: 'AI Chat Application',
+      title: 'Modularcalc',
       description:
-        'Real-time chat application with AI-powered responses, message encryption, and responsive design.',
-      tech: ['React', 'Socket.io', 'Python', 'OpenAI'],
-      github: '#',
-      live: '#',
+        'A simple Modular Calculator',
+      tech: ['JavaScript', 'HTML', 'CSS'],
+      github: 'https://github.com/adarshks1238/Modularcalc.git',
+      live: 'https://adarshks1238.github.io/Modularcalc/',
     },
   ];
 
