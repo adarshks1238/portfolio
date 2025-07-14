@@ -8,25 +8,21 @@ const Projects: React.FC = () => {
       description:
         'A full-stack e-commerce solution with modern UI/UX, secure payment integration, and comprehensive admin dashboard.',
       tech: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-      image:
-        'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=600',
       github: '#',
       live: '#',
     },
-    /* {
+    {
       title: 'AI Chat Application',
       description:
         'Real-time chat application with AI-powered responses, message encryption, and responsive design.',
       tech: ['React', 'Socket.io', 'Python', 'OpenAI'],
-      image:
-        'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=600',
       github: '#',
       live: '#',
-    }, */
+    },
   ];
 
   return (
-    <section id="projects" className="py-20 bg-white dark:bg-gray-800">
+    <section id="projects" className="py-20 bg-gray-50 dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
@@ -44,20 +40,13 @@ const Projects: React.FC = () => {
               key={index}
               className="bg-gray-50 dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
-              <div className="relative overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-48 object-cover transition-transform duration-300 hover:scale-105"
-                />
-                <div className="absolute top-4 right-4">
+              <div className="p-6">
+                <div className="flex items-center justify-between mb-4">
                   <div className="bg-white dark:bg-gray-800 p-2 rounded-full shadow-lg">
                     <Folder className="w-5 h-5 text-gray-600 dark:text-gray-300" />
                   </div>
                 </div>
-              </div>
 
-              <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
                   {project.title}
                 </h3>
@@ -101,10 +90,9 @@ const Projects: React.FC = () => {
           ))}
         </div>
 
-      
         <div className="mt-12 text-center">
           <a
-            href="https://github.com/adarshks1238" 
+            href="https://github.com/adarshks1238"
             rel="noopener noreferrer"
             className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-full shadow hover:bg-blue-700 transition duration-300"
           >
