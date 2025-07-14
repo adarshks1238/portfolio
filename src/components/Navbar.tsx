@@ -110,7 +110,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
             ))}
             <div className="flex space-x-4 mt-2">
               <a
-                href="www.linkedin.com/in/adarshksundaresan"
+                href="https://www.linkedin.com/in/adarshksundaresan/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-md text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
