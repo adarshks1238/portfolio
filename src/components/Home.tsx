@@ -76,7 +76,7 @@ const Home: React.FC = () => {
 
           <div className="flex justify-center mb-8">
             <a
-              href="/public/resume.pdf"
+              href="/resume.pdf"
               download
               className="inline-flex items-center px-6 py-3 bg-blue-600 text-white dark:text-white hover:bg-blue-700 dark:hover:bg-blue-500 rounded-lg transition-colors"
             >
