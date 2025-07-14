@@ -50,13 +50,22 @@ const Home: React.FC = () => {
         <div className="text-center">
           <div className="mb-8">
             <div className="w-44 h-44 mx-auto mb-8 rounded-full">
-                <div className="w-full h-full rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center">
-                <img
-                  src="https://envs.sh/iGZ.jpg"
-                  alt="Profile"
-                  className="w-40 h-40 rounded-full object-cover"
-                />
-                </div>
+              <div className="flex justify-center mb-8">
+                <a
+                  href="https://envs.sh/iGZ.jpg"
+                  download="Adarsh-KS-Profile.jpg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-40 h-40 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center overflow-hidden"
+                >
+                  <img
+                    src="https://envs.sh/iGZ.jpg"
+                    alt="Profile"
+                    className="w-full h-full object-cover"
+                  />
+                </a>
+              </div>
+
             </div>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-4">
