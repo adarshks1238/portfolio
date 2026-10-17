@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Adarsh K Sundaresan | Java Full Stack Developer</title>
+  <meta name="description"
+    content="Portfolio of Adarsh K Sundaresan, Computer Science Engineering graduate and aspiring Java Full Stack Developer.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div class="blobs" aria-hidden="true"></div>
+
+  <header class="nav glass" id="nav">
+    <a class="brand" href="#home" aria-label="Home"><img src="assets/profile-avatar.jpg" alt="Adarsh K Sundaresan"></a>
+    <nav class="links" id="navLinks">
+      <a class="on" href="#home">Home</a><a href="#about">About</a><a href="#toolkit">Toolkit</a><a
+        href="#projects">Projects</a><a href="#journey">Journey</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="talk" href="#contact">Let's talk</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-txt">
+        <p class="hi">Hey 👋 I'm Adarsh</p>
+        <h1>Aspiring<br>Software Developer</h1>
+        <p class="lead">Computer Science graduate from Kerala who builds reliable software with Java, Python and AI, and
+          enjoys debugging until it just works.</p>
+        <div class="cta-row">
+          <a class="btn" href="#contact">Get in Touch</a>
+          <a class="btn ghost dl" href="assets/Adarsh_K_Sundaresan_Resume.pdf" download>Download Resume ↓</a>
+        </div>
+      </div>
+      <img class="hero-photo" id="heroPhoto" src="assets/profile-hero.jpg" alt="Portrait of Adarsh K Sundaresan"
+        fetchpriority="high">
+      <span class="chip c1 glass">Java · Spring</span><span class="chip c2 glass">Python · AI</span><span
+        class="chip c3 glass">Full Stack</span>
+      <a class="scroll" href="#about" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <section class="story-wrap" id="about">
+      <div class="story">
+        <p id="story">Welcome to my portfolio! I'm Adarsh, a Computer Science Engineering graduate with a strong
+          foundation in Java, OOP, Data Structures &amp; Algorithms and DBMS. I've built full-stack projects and REST
+          APIs, and I enjoy debugging, testing and writing efficient, maintainable software.</p>
+        <a class="more" href="#projects">See my latest work →</a>
+      </div>
+    </section>
+
+    <section class="wrap rv" id="toolkit">
+      <div class="tk glass">
+        <div class="tk-l">
+          <p class="tag">Tools &amp; technologies</p>
+          <h2 class="xl">My toolkit.</h2>
+          <p class="sub">Languages, frameworks and tools from my projects and training. Pick a category and its tools
+            come to the front.</p>
+          <div class="cats" id="cats"></div>
+          <h3 id="ct"></h3>
+          <div id="cl" class="cl"></div>
+        </div>
+        <div class="tk-r">
+          <div class="stage" id="stage"><canvas id="cv"></canvas></div>
+          <div class="ctl"><span class="sub" style="margin:0">Drag to explore</span>
+            <span><button id="pv" aria-label="Previous category">←</button><button id="ps"
+                aria-label="Pause rotation">❚❚</button><button id="nx" aria-label="Next category">→</button></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap rv" id="projects">
+      <h2>Selected projects</h2>
+      <div class="grid">
+        <article class="card glass rv">
+          <div class="pills"><span>Python</span><span>YOLOv11</span><span>LSTM</span></div>
+          <h3>Smart Ways: Smart Traffic Management</h3>
+          <p>Real-time traffic optimization system combining YOLOv11 vehicle detection with LSTM traffic-flow prediction
+            across multiple intersection feeds.</p>
+          <ul>
+            <li>Modified Priority Round Robin scheduling adjusts signal timings dynamically.</li>
+            <li>Web dashboard tested with Selenium; API endpoints tested with Postman.</li>
+          </ul>
+          <a class="gh" data-repo="smartWays" target="_blank" rel="noopener">View on GitHub <b>↗</b></a>
+        </article>
+        <article class="card glass rv">
+          <div class="pills"><span>Python</span><span>YOLO</span><span>RAG</span></div>
+          <h3>Cybot Intelligence: Evidence Detection</h3>
+          <p>Real-time system that identifies digital devices from image and video input to support forensic
+            investigations.</p>
+          <ul>
+            <li>Retrieval-Augmented Generation module gives SOP guidance to investigators.</li>
+            <li>Automated reports with annotated images and secure audit logging.</li>
+          </ul>
+          <a class="gh" data-repo="cybot" target="_blank" rel="noopener">View on GitHub <b>↗</b></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap" id="journey">
+      <h2 class="rv">Experience &amp; education</h2>
+      <div class="tl" id="tl"><i class="tl-fill" id="tlf"></i>
+        <div class="ti left"><span class="dot"></span>
+          <div class="card glass"><small>May 2026 – Present</small>
+            <h3>Java Full Stack Development Training</h3>
+            <p class="org">QSpiders, Kochi</p>
+            <p>Core Java and OOP, DSA problems in Java on LeetCode, SQL practice, and Spring Boot with HTML, CSS and
+              JavaScript basics.</p>
+          </div>
+        </div>
+        <div class="ti right"><span class="dot"></span>
+          <div class="card glass"><small>Jan 2026 – Apr 2026</small>
+            <h3>Cyber Security Intern</h3>
+            <p class="org">Kerala Police Academy (Cyber Wing), Thrissur</p>
+            <p>Reviewed system logs and digital evidence to spot anomalies, and documented findings and verification
+              steps for internal reporting.</p>
+          </div>
+        </div>
+        <div class="ti left"><span class="dot"></span>
+          <div class="card glass"><small>2022 – 2026</small>
+            <h3>B.Tech, Computer Science Engineering</h3>
+            <p class="org">Amal Jyothi College of Engineering (Autonomous)</p>
+            <p>CGPA 8.02. Paper presented at NACORE 2025 and ICIKS 2025.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap rv" id="certs">
+      <h2>Certifications &amp; talks</h2>
+      <div class="grid4">
+        <div class="card glass rv">
+          <h3>Programming Using Java</h3>
+          <p>Infosys Springboard, Feb 2024</p>
+        </div>
+        <div class="card glass rv">
+          <h3>Database Programming with SQL</h3>
+          <p>Oracle Academy, Oct 2024</p>
+        </div>
+        <div class="card glass rv">
+          <h3>The Joy of Computing Using Python</h3>
+          <p>NPTEL, IIT Madras (Elite), Jul – Oct 2024</p>
+        </div>
+        <div class="card glass rv">
+          <h3>"Intelli Traffic Management System"</h3>
+          <p>Paper presented at NACORE 2025 and ICIKS 2025</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap rv" id="contact">
+      <div class="contact glass">
+        <div class="c-l">
+          <h2 class="xl">Let's work together.</h2>
+          <p class="sub">I'm open to software engineering roles as a fresher. Send a message and I'll get back to you.
+          </p>
+          <div class="links2">
+            <a id="lEmail" class="link-item"><span class="icon">✉</span><span class="val"></span></a>
+            <a id="lPhone" class="link-item"><span class="icon">📞</span><span class="val"></span></a>
+            <a id="lLin" class="link-item" target="_blank" rel="noopener"><span class="icon">💼</span><span>LinkedIn
+                ↗</span></a>
+            <a id="lGit" class="link-item" target="_blank" rel="noopener"><span class="icon">🐙</span><span>GitHub
+                ↗</span></a>
+          </div>
+          <a class="btn dl" href="assets/Adarsh_K_Sundaresan_Resume.pdf" download>Download Resume ↓</a>
+        </div>
+        <form id="form" class="form" novalidate>
+          <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off">
+          <label>Your name<input name="name" required autocomplete="name" placeholder="Your Name"></label>
+          <label>Email<input name="email" type="email" required autocomplete="email"
+              placeholder="you@example.com"></label>
+          <label>Message<textarea name="message" rows="5" required
+              placeholder="Tell me about the role, project, or say hello..."></textarea></label>
+          <button class="btn" type="submit" id="send">Send message</button>
+          <p id="msg" class="fmsg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 Adarsh K Sundaresan</footer>
+  <script src="js/config.js"></script>
+  <script src="js/icons.js"></script>
+  <script src="js/toolkit.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
