@@ -1,5 +1,13 @@
-# Assets (images, resume)
-assets/
+# Assets (images, resume) - Note: If hosting on Vercel via GitHub, uncomment to track assets
+# assets/
+
+# Environment Variables & Secrets
+.env
+.env.local
+.env.*.local
+.env.development
+.env.test
+.env.production
 
 # Operating System files
 .DS_Store
@@ -11,3 +19,4 @@ Desktop.ini
 .idea/
 *.sublime-project
 *.sublime-workspace
+

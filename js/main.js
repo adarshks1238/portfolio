@@ -114,6 +114,29 @@ if(f){
     const targetEmail=C.email||'adarshksundaresan12381698@gmail.com';
 
     try{
+      // 1. Check if Vercel serverless function /api/contact is available
+      let sentViaApi = false;
+      try {
+        const apiRes = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ name, email, message })
+        });
+        if (apiRes.ok) {
+          const apiJson = await apiRes.json().catch(() => ({}));
+          if (apiJson.success) {
+            msg.className = 'fmsg ok';
+            msg.textContent = '✓ Thank you! Your message was sent and I will reply soon.';
+            f.reset();
+            sentViaApi = true;
+            return;
+          }
+        }
+      } catch (_) {
+        // Fall through to client-side direct delivery
+      }
+      if (sentViaApi) return;
+
       if(C.web3formsKey && C.web3formsKey.trim()){
         d.set('access_key',C.web3formsKey.trim());
         d.set('subject','Portfolio message from '+name);
