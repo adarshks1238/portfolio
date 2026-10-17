@@ -19,8 +19,8 @@ module.exports = async (req, res) => {
       return res.status(400).json({ success: false, message: 'Please provide name, email, and message.' });
     }
 
-    const accessKey = process.env.WEB3FORMS_ACCESS_KEY || process.env.WEB3FORMS_KEY;
-    const targetEmail = process.env.CONTACT_EMAIL || 'adarshksundaresan12381698@gmail.com';
+    const accessKey = process.env.WEB3FORMS_ACCESS_KEY || process.env.WEB3FORMS_KEY || '100193b7-fe00-4765-9550-fa2378135bf3';
+    const targetEmail = process.env.CONTACT_EMAIL || 'adarshksundaresan5@gmail.com';
 
     // 1. If Web3Forms access key is configured in Vercel environment variables
     if (accessKey && accessKey.trim()) {

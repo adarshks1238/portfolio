@@ -111,10 +111,28 @@ if(f){
     msg.className='fmsg';
     msg.textContent='';
 
-    const targetEmail=C.email||'adarshksundaresan12381698@gmail.com';
+    const targetEmail=C.email||'adarshksundaresan5@gmail.com';
+    const accessKey=(d.get('access_key')||C.web3formsKey||'100193b7-fe00-4765-9550-fa2378135bf3').trim();
 
     try{
-      // 1. Check if Vercel serverless function /api/contact is available
+      // 1. Direct Web3Forms submission
+      if(accessKey){
+        d.set('access_key',accessKey);
+        d.set('subject','Portfolio message from '+name);
+        d.set('from_name','Portfolio Website');
+        const r=await fetch('https://api.web3forms.com/submit',{method:'POST',body:d});
+        const j=await r.json();
+        if(j.success){
+          msg.className='fmsg ok';
+          msg.textContent='✓ Thank you! Your message was sent and I will reply soon.';
+          f.reset();
+          return;
+        }else{
+          throw new Error(j.message||'Web3Forms error');
+        }
+      }
+
+      // 2. Check if Vercel serverless function /api/contact is available
       let sentViaApi = false;
       try {
         const apiRes = await fetch('/api/contact', {
@@ -136,22 +154,6 @@ if(f){
         // Fall through to client-side direct delivery
       }
       if (sentViaApi) return;
-
-      if(C.web3formsKey && C.web3formsKey.trim()){
-        d.set('access_key',C.web3formsKey.trim());
-        d.set('subject','Portfolio message from '+name);
-        d.set('from_name','Portfolio Website');
-        const r=await fetch('https://api.web3forms.com/submit',{method:'POST',body:d});
-        const j=await r.json();
-        if(j.success){
-          msg.className='fmsg ok';
-          msg.textContent='✓ Thank you! Your message was sent and I will reply soon.';
-          f.reset();
-          return;
-        }else{
-          throw new Error(j.message||'Web3Forms error');
-        }
-      }
 
       // Default: Direct zero-config delivery via FormSubmit.co
       const r=await fetch('https://formsubmit.co/ajax/'+encodeURIComponent(targetEmail),{

@@ -175,8 +175,9 @@
           </div>
           <a class="btn dl" href="assets/Adarsh_K_Sundaresan_Resume.pdf" download>Download Resume ↓</a>
         </div>
-        <form id="form" class="form" novalidate>
-          <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off">
+        <form id="form" class="form" action="https://api.web3forms.com/submit" method="POST" novalidate>
+          <input type="hidden" name="access_key" value="100193b7-fe00-4765-9550-fa2378135bf3">
+          <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" style="display:none">
           <label>Your name<input name="name" required autocomplete="name" placeholder="Your Name"></label>
           <label>Email<input name="email" type="email" required autocomplete="email"
               placeholder="you@example.com"></label>
