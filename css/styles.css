@@ -237,40 +237,28 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 100px max(24px, 4vw) 60px;
+    padding: 110px max(28px, 6vw) 70px;
     border-radius: 0 0 44px 44px
 }
 
 .hero-glow {
     position: absolute;
-    right: 18%;
+    right: 4%;
     bottom: -10%;
-    width: 50vw;
-    height: 50vw;
-    max-width: 650px;
-    max-height: 650px;
+    width: 60vw;
+    height: 60vw;
+    max-width: 800px;
+    max-height: 800px;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(198, 244, 50, .35), rgba(80, 150, 90, .15) 45%, transparent 70%);
+    background: radial-gradient(circle, rgba(198, 244, 50, .4), rgba(80, 150, 90, .15) 45%, transparent 70%);
     filter: blur(30px);
     animation: pulse 6s ease-in-out infinite
-}
-
-.hero-container {
-    position: relative;
-    z-index: 3;
-    width: 100%;
-    max-width: 1120px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-height: calc(100svh - 160px);
 }
 
 .hero-txt {
     position: relative;
     z-index: 3;
-    max-width: 560px
+    max-width: 620px
 }
 
 .hi {
@@ -281,7 +269,7 @@ a {
 }
 
 h1 {
-    font-size: clamp(44px, 7vw, 100px);
+    font-size: clamp(46px, 8.6vw, 112px);
     line-height: .98;
     letter-spacing: -.04em;
     margin: 0 0 24px;
@@ -290,7 +278,7 @@ h1 {
 
 .lead {
     color: #b9bfb6;
-    font-size: clamp(15px, 1.4vw, 17.5px);
+    font-size: clamp(15px, 1.5vw, 18px);
     line-height: 1.6;
     max-width: 480px;
     margin: 0 0 32px;
@@ -304,12 +292,11 @@ h1 {
 .hero-photo {
     position: absolute;
     right: 0;
-    bottom: -60px;
-    height: calc(100% + 60px);
-    max-height: 94svh;
+    bottom: 0;
+    height: 94%;
     aspect-ratio: 3/4;
     width: auto;
-    max-width: 52%;
+    max-width: 62%;
     object-fit: cover;
     object-position: center top;
     z-index: 2;
@@ -318,9 +305,9 @@ h1 {
     box-shadow: none;
     animation: pin 1.4s .25s var(--ease) both;
     transition: transform .3s ease-out;
-    -webkit-mask-image: linear-gradient(to right, transparent 0, #000 26%), linear-gradient(to top, transparent 0, #000 16%), linear-gradient(to bottom, transparent 0, #000 14%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0, #000 38%), linear-gradient(to top, transparent 0, #000 16%), linear-gradient(to bottom, transparent 0, #000 14%);
     -webkit-mask-composite: source-in;
-    mask-image: linear-gradient(to right, transparent 0, #000 26%), linear-gradient(to top, transparent 0, #000 16%), linear-gradient(to bottom, transparent 0, #000 14%);
+    mask-image: linear-gradient(to right, transparent 0, #000 38%), linear-gradient(to top, transparent 0, #000 16%), linear-gradient(to bottom, transparent 0, #000 14%);
     mask-composite: intersect
 }
 
